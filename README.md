@@ -10,7 +10,7 @@ This tutorial consists of 5 different ways to write a Tic Tac Toe program in Rea
 
 ## T1: Everything is encapsulated inside `App.jsx`
 
-> The key feature of this approach is that all states are updated using 1 function called `handleClick()`. I made this decision because all states are dependent on one another, the change in one state causes the change in the other. For example, click a cell changes the state of the board as a whole, the current player, and who the winner is. As a result, I find it's easier to read and follow than the official tutorial done by React. 
+> The key feature of this approach is that all states are updated using 1 function called `handleClick()`. I made this decision because all states are dependent on one another, the change in one state causes the change in the other. For example, click a cell changes the state of the board as a whole, update the current player, and who the winner is. As a result, I find it's easier to read and follow than the official tutorial done by React. 
 
 ![state_change_v1](/tic-tac-toe-v1/public/ttt1.png)
 
@@ -27,4 +27,7 @@ This tutorial consists of 5 different ways to write a Tic Tac Toe program in Rea
 5. Step 2-4 is the key to update the UI at each step.
 
 ## T2: A more hierarchical approach of passing data from square to board to game
+
+> The key feature of this approach is the breakdown into components: Game → Board → Square. The Game component owns the state (the source of truth). It passes data down to Board as props, and Board passes data further down to Square. When a square is clicked, an event flows back up through callback functions to request a state update in Game.
+
 ![data_flow](./tic-tac-toe-v2/public/ttt2.png)
