@@ -13,7 +13,7 @@ T5: A minimax algorithm (human vs. computer)
 1. First, think about the tic tac toe board as a container that consists of clickable individual cells
 2. When we click on a cell, the whole state of the board will change. As a result, we can use `useState()` a React Hook that lets you add a state variable to your component. The initial state is a 2D matrix (3 rows and 3 columns with no values).
    ```jsx
-   const [initialBoard, setBoard] = useState();
+   const [Board, setBoard] = useState();
    ```
 3. `setBoard` is the function to set the state of the component to a new one
 4. To update the component to a new state (e.g., visual representation), we need the following information:
