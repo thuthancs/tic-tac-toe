@@ -27,3 +27,4 @@ This tutorial consists of 5 different ways to write a Tic Tac Toe program in Rea
 5. Step 2-4 is the key to update the UI at each step.
 
 ## T2: A more hierarchical approach of passing data from square to board to game
+![data_flow](./tic-tac-toe-v2/public/ttt2.png)
