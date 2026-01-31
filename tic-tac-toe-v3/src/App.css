@@ -1,0 +1,14 @@
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(var(--size), 100px);
+  grid-template-rows: repeat(var(--size), 100px);
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.board-container div {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
